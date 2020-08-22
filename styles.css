@@ -46,10 +46,10 @@ li:nth-child(even){
 
 #btnSignUp{
     
-    margin-left: 170px;
+    margin-left: 140px;
 }
 #rstt{
-    margin-left: 85px;
+    margin-left: 75px;
     
 }
 .btn{
@@ -65,7 +65,7 @@ li:nth-child(even){
 
 #btnReset{
     
-    margin-left: 100px;
+    margin-left: 90px;
 }
 #Float{
     float: right;

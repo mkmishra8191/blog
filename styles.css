@@ -42,14 +42,18 @@ li:nth-child(even){
     padding-bottom:37px ;
     padding-top:37px ;
 }
+#btnLogin{
+   
+    margin-left: 30px;
 
+}
 
 #btnSignUp{
     
-    margin-left: 200px;
+    margin-left: 75px;
 }
 #rstt{
-    margin-left: 75px;
+    margin-left: 62px;
     
 }
 .btn{

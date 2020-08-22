@@ -1,7 +1,7 @@
 const login = 
  `
  
- <div class="container">
+ <div id="stl">
  
  <div id="box">
    <input type="email"  placeholder="Email address" size="45" id="txtEmail" ><br/><br/>
@@ -16,8 +16,9 @@ const login =
  </div>
  
  
- </div>
+ 
  <br /> <br />
+ </div>
  <span id="errorMessage"></span>
   <span id="successMessage"></span>
  `

@@ -148,6 +148,8 @@ function subscribemyPost(){
   var uTitle = document.getElementById("updtTitle");
   var uContent = document.getElementById("updtContent");
    var key = document.querySelector('#updtButton').getAttribute('data-id');
+
+   if(uTitle.value!=""){
    firebase.firestore().collection("items").doc(key).update({
     
     title: uTitle.value,
@@ -159,6 +161,13 @@ function subscribemyPost(){
 
 
    })
+   onNavigate('/');
+
+  }else
+{
+  onNavigate('/');
+}
+
 
 
    console.log(uTitle)
@@ -175,6 +184,8 @@ function subscribemyPost(){
   var Content = document.getElementById("txtContent");
   
 console.log(Title); 
+
+if(Title.value!=""){
   
   firebase.firestore().collection("items").add({
     title: Title.value,
@@ -183,6 +194,12 @@ console.log(Title);
     createdAt:timestamp()
     
   })
+
+  onNavigate('/');
+} else
+{
+  onNavigate('/');
+}
 }
 
 

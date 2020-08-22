@@ -18,6 +18,8 @@
     successMessage.innerHTML="";
     errorMessage.innerHTML="";
 
+    onNavigate('/');
+
 
   
 },
@@ -50,6 +52,7 @@ err => {
   
     successMessage.innerHTML="";
     errorMessage.innerHTML="";
+    onNavigate('/');
 
 
   
@@ -131,9 +134,9 @@ err => {
              x.setAttributeNode(y);
              
             
-              
+             subscribePost();
            
-              subscribemyPost();
+              
             
            // is signed in
             
@@ -148,8 +151,8 @@ err => {
             
 
 
-
             subscribePost();
+            
             
             //no user is signed in
           

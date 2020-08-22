@@ -33,7 +33,7 @@ li:nth-child(even){
     margin-left: 30%;
     margin-right: 30%;
     
-    background-color: blue;
+    
     
 }
 #box{
@@ -92,6 +92,12 @@ nav{
 
 body{
     margin: 0;
+}
+
+#stl{
+    
+    margin-left: 30%;
+    
 }
 
 

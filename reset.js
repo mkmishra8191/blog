@@ -1,4 +1,5 @@
-const reset = `<div class="container">
+const reset = `<div id="stl">
+
 <div id="box">
         <input type="email"  placeholder="Email address" size="45" id="txtEmail" > <br/><br />
         

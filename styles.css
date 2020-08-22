@@ -1,0 +1,98 @@
+#root {
+
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+ 
+  
+#mypost li{  
+    word-wrap:break-word;
+    font: 1em sans-serif;
+    padding: 15px;
+    padding-right: 5px;
+    margin-bottom: 5%;
+    color: white;
+    width: 60%;
+    list-style: none;
+    background-color: blue;
+    
+    
+}
+
+   
+li:nth-child(even){
+    
+
+    margin-left: 30%;
+}
+
+.container{
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+    background-color: blue;
+    
+}
+#box{
+    
+    margin-left: 37px;
+    padding-bottom:37px ;
+    padding-top:37px ;
+}
+
+
+#btnSignUp{
+    
+    margin-left: 185px;
+}
+#rstt{
+    margin-left: 85px;
+    
+}
+.btn{
+    
+    margin-left: 130px;
+}
+#errorMessage,#successMessage{
+    margin-left: 30%;
+}
+#successMessageR,#errorMessageR{
+    margin-left: 30%;
+}
+
+#btnReset{
+    
+    margin-left: 100px;
+}
+#Float{
+    float: right;
+    outline-style: none;
+    font: xx-large;
+    font: bold;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+    font: bold;
+    
+}
+
+nav{
+    padding-top: 20px;
+    background-color: blue;
+    padding-bottom: 20px;
+    
+}
+
+body{
+    margin: 0;
+}
+
+
+

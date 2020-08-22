@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+  <nav>
+         
+        
+           
+    <a href="#" onclick="onNavigate('/'); subscribePost(); return false;">Post</a>
+     <a href="#" hidden onclick="onNavigate('/'); subscribemyPost(); return false;" id="btnp" >My Post</a>
+    <a href="#" hidden onclick="onNavigate('/dashboard'); return false;" id="btna">Add Post</a>
+    <span id="Float">
+     <a  href="#"  hidden onclick =" signOut(); onNavigate('/');"  id="btnLogout">Log out</a>
+       <a href="#"   onclick="onNavigate('/login'); return false; " id="btnlogin">Login</a>
+     </span>
+</nav>
+    
+    
+
+
+
+
+  <section id="root"><section ><ul id="mypost"></ul></section> </section>
+  
+  
+    
+  
+  
+  <script src="home.js"></script>
+  <script src="update.js"></script>
+  <script  src="dashboard.js"></script>
+    <script src="login.js"></script>
+    <script src="logout.js"></script>
+    <script src="reset.js"></script>
+    
+    
+   
+
+    <script>var firebaseConfig = {
+      apiKey: "AIzaSyBDlOnYe4bA-82Qkd30d026GnB9OlMSaag",
+      authDomain: "posts-f62c9.firebaseapp.com",
+      databaseURL: "https://posts-f62c9.firebaseio.com",
+      projectId: "posts-f62c9",
+      storageBucket: "posts-f62c9.appspot.com",
+      messagingSenderId: "158079951560",
+      appId: "1:158079951560:web:8bb10ea9ef7bde24c8fbfd",
+      measurementId: "G-QTVCV1MVJN"
+    }
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+   const auth = firebase.auth();
+  
+</script>
+
+
+    
+    <script src="auth.js"></script>
+    
+    <script  src="router.js"></script> 
+    <script src="postService.js"></script>
+    <script src="auth.js"></script>
+
+      
+
+       
+      
+        
+       
+         
+          
+       
+         
+        </body>
+        </html>   
+            
+            
+          
+        
+          
+  

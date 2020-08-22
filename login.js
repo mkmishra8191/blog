@@ -4,8 +4,8 @@ const login =
  <div id="stl">
  
  <div id="box">
-   <input type="email"  placeholder="Email address" size="45" id="txtEmail" ><br/><br/>
-   <input type="password" placeholder="Password" size="45" id="txtPassword" ><br/><br/>
+   <input type="email"  placeholder="Email address" size="35" id="txtEmail" ><br/><br/>
+   <input type="password" placeholder="Password" size="35" id="txtPassword" ><br/><br/>
    
  
  <button   id="btnLogin" onclick = "signIn()" ;>Log in</button> 

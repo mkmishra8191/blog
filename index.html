@@ -32,13 +32,13 @@
            
     <a href="#" onclick="onNavigate('/'); subscribePost(); return false;">Post</a>
      <a href="#" hidden onclick="onNavigate('/'); subscribemyPost(); return false;" id="btnp" >My Post</a>
-    <a href="#" hidden onclick="onNavigate('/dashboard'); return false;" id="btna">Add Post</a>
+    <a href="#" hidden onclick="onNavigate('/dashboard'); window.onload.$('#txtTitle').focus(); return false;" id="btna">Add Post</a>
   </span>
   </div> 
     <div class="col-3">
     <span id="Float">
      <a  href="#"  hidden onclick =" signOut(); onNavigate('/');"  id="btnLogout">Log out</a>
-       <a href="#"   onclick="onNavigate('/login'); return false; " id="btnlogin">Login</a>
+       <a href="#"   onclick="onNavigate('/login'); window.onload.$('#txtEmail').focus(); return false; " id="btnlogin">Login</a>
      </span>
     </div>
 </nav>

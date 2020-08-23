@@ -132,6 +132,8 @@ function subscribemyPost(){
    li.appendChild(mpbutton);
    
    document.querySelector('#mypost').appendChild(li);
+   
+
  });
 });
 
@@ -212,6 +214,7 @@ function  onEdit(eTitle,eContent,id){
   document.querySelector('#updtButton').setAttribute('data-id',id)
 
   console.log(document.querySelector('#updtButton').getAttribute('data-id'));
+  $('#updtTitle').focus();
 }
 
  function onPost(){

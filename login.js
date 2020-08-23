@@ -1,6 +1,6 @@
 const login = 
  `
-
+ 
  <div class="container">
  <div class="row"><div class="col-6">
  
@@ -20,7 +20,7 @@ const login =
  
 
  <div id="btnReset">
- <button  onclick="onNavigate('/reset');">Reset Password</a></button>
+ <button id="abc" onclick="onRNavigate(); ">Reset Password</a></button>
  </div></div>
  </div>
  </div>

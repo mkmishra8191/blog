@@ -72,7 +72,7 @@ err => {
     
 
     function resetPassword(resolve,reject){
-        var email = document.getElementById("txtEmail");
+        var email = document.getElementById("txtREmail");
         
         return new Promise((resolve, reject) => {
  firebase.auth().sendPasswordResetEmail(email.value)

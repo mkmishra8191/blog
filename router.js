@@ -28,7 +28,12 @@ function onNavigate(pathname){
    rootDiv.innerHTML = routes[window.location.pathname]
     
  }
+function onRNavigate(){
 
+  onNavigate('/reset');
+
+  window.onload.$('#txtREmail').focus();
+}
  
   
 

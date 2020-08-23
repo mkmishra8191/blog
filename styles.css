@@ -33,12 +33,7 @@
 
 
 
-#root {
 
-    margin-left: 15%;
-    
-
-}
 
  
   
@@ -49,7 +44,7 @@
     padding-right: 5px;
     margin-bottom: 5%;
     color: white;
-    width: 50%;
+    width: 90%;
     list-style: none;
     background-color: blue;
     
@@ -60,14 +55,14 @@
 li:nth-child(even){
     
 
-    margin-left: 30%;
+    margin-left: 110%;
 }
 
 .container{
-    width: 40%;
+    
     margin-top: 100px;
-    margin-left: 20%;
-    background-color: blue;
+    
+    margin-left: 25%;
     
     
     
@@ -75,7 +70,8 @@ li:nth-child(even){
 }
 #box{
     
-    margin-left: 16%;
+    background-color: blue;
+    
     padding-bottom:37px ;
     padding-top:50px ;
 }
@@ -85,25 +81,26 @@ li:nth-child(even){
     
     float: right;
 
-    margin-right: 19%;
+    margin-right: 10%;
 }
 
-    
+  #btnLogin{
+      margin-left: 10%;
+  }  
 
-.btn{
-    
-    margin-left: 35%;
-}
 #errorMessage,#successMessage{
-    margin-left: 30%;
+    margin-left: 25%;
 }
 #successMessageR,#errorMessageR{
-    margin-left: 30%;
+    margin-left: 25%;
 }
 
 #btnReset{
+
+    display: flex;
+    justify-content: center;
     
-    margin-left: 26%;
+    
 }
 #Float{
     float: right;
@@ -111,6 +108,10 @@ li:nth-child(even){
     font: xx-large;
     font: bold;
     margin-right: 5%;
+}
+
+#noFloat a{
+    margin-left: 2%;
 }
 a{
     text-decoration: none;
@@ -134,17 +135,23 @@ body{
 
 
 textarea{
+    
 
     width: 80%;
 }
 
 #txtEmail, #txtPassword{
+    
     width: 80%;
 }
 
-#noFloat a{
-    margin-left: 2%;
+.xyz{
+    display: flex;
+    justify-content: center;
+
 }
+
+
 
 
 

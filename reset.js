@@ -1,10 +1,11 @@
 const reset = `<div class="container">
-
+<div class="row"><div class="col-6">
 <div id="box">
-        <input type="email"  placeholder="Email address"  id="txtEmail" autofocus> <br/><br />
+         <div class="xyz">
+        <input type="email"  placeholder="Email address"  id="txtEmail" autofocus></div> <br/><br />
         <div id="btnReset">
         <button   onclick="resetPassword();">Reset Password</button>
-        </div></div></div><br /><br />
+        </div></div></div></div></div><br /><br />
         <span id="errorMessageR"></span>
   <span id="successMessageR"></span>
         

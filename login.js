@@ -1,18 +1,20 @@
 const login = 
  `
  
- <div id="stl">
+ <div class="container">
  
  <div id="box">
-   <input type="email"  placeholder="Email address" size="33" id="txtEmail" ><br/><br/>
-   <input type="password" placeholder="Password" size="33" id="txtPassword" ><br/><br/>
+   <input type="email"  placeholder="Email address"  id="txtEmail"  autofocus><br/><br/>
+   <input type="password" placeholder="Password"  id="txtPassword" ><br/><br/>
    
- 
+ <div>
  <button   id="btnLogin" onclick = "signIn()" ;>Log in</button> 
  <button   id="btnSignUp" onclick="signUp()";>Sign up</button><br/><br/>
- 
- <button id="rstt" onclick="onNavigate('/reset');">Reset Password</a></button>
+ </div>
 
+ <div id="btnReset">
+ <button  onclick="onNavigate('/reset');">Reset Password</a></button>
+ </div>
  </div>
  
  

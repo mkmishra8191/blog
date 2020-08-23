@@ -1,7 +1,7 @@
 #root {
 
     margin-left: 15%;
-    margin-right: 15%;
+    
 
 }
 
@@ -14,7 +14,7 @@
     padding-right: 5px;
     margin-bottom: 5%;
     color: white;
-    width: 60%;
+    width: 50%;
     list-style: none;
     background-color: blue;
     
@@ -29,36 +29,35 @@ li:nth-child(even){
 }
 
 .container{
+    width: 40%;
     margin-top: 100px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    background-color: blue;
+    
     
     
     
 }
 #box{
     
-    margin-left: 37px;
+    margin-left: 16%;
     padding-bottom:37px ;
-    padding-top:37px ;
+    padding-top:50px ;
 }
-#btnLogin{
-   
-    margin-left: 35px;
 
-}
 
 #btnSignUp{
     
-    margin-left: 85px;
+    float: right;
+
+    margin-right: 19%;
 }
-#rstt{
-    margin-left: 67px;
+
     
-}
+
 .btn{
     
-    margin-left: 130px;
+    margin-left: 35%;
 }
 #errorMessage,#successMessage{
     margin-left: 30%;
@@ -69,7 +68,7 @@ li:nth-child(even){
 
 #btnReset{
     
-    margin-left: 90px;
+    margin-left: 26%;
 }
 #Float{
     float: right;
@@ -98,10 +97,14 @@ body{
     margin: 0;
 }
 
-#stl{
-    
-    margin-left: 30%;
-    
+
+textarea{
+
+    width: 80%;
+}
+
+#txtEmail, #txtPassword{
+    width: 80%;
 }
 
 

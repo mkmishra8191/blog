@@ -8,6 +8,7 @@
    '/update' : update,
    };
  var rootDiv = document.getElementById('root');
+ rootDiv.innerHTML = routes[window.location.pathname]
 
 
  

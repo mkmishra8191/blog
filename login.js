@@ -1,6 +1,6 @@
 const login = 
  `
- 
+
  <div class="container">
  <div class="row"><div class="col-6">
  
@@ -12,9 +12,9 @@ const login =
    <input type="password" placeholder="Password"  id="txtPassword" >
    </div><br/><br/>
    
- <div>
+ 
  <button   id="btnLogin" onclick = "signIn()" ;>Log in</button> 
- </div>
+ 
  
  <button   id="btnSignUp" onclick="signUp()";>Sign up</button><br/><br/>
  

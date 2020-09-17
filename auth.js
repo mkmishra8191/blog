@@ -12,14 +12,14 @@
 
 
 }).then(res => {
-  console.log(res);
+  
   
   
     successMessage.innerHTML="";
     errorMessage.innerHTML="";
 
-    onNavigate('/');
-
+    window.location.href="/multipage/public/index.html"
+    subscribePost();
 
   
 },
@@ -47,13 +47,13 @@ err => {
 
 
 }).then(res => {
-  console.log(res);
+  
   
   
     successMessage.innerHTML="";
     errorMessage.innerHTML="";
-    onNavigate('/');
-
+    window.location.href="/multipage/public/index.html"
+    subscribePost();
 
   
 },
@@ -82,7 +82,7 @@ err => {
 
 
 }).then(res => {
-  console.log(res);
+  
   
   
     successMessageR.innerHTML="Link has been sent to your email address.";
@@ -107,7 +107,9 @@ err => {
     function signOut(){
         
         auth.signOut();
-        alert("Signed Out");
+        window.location.href="/multipage/public/index.html"
+        subscribePost();
+        
         
     }
     
@@ -116,12 +118,36 @@ err => {
     auth.onAuthStateChanged(function(user){
         
         if(user){
-            
-           
+         
+          if(user.displayName){
+            if(document.querySelector('#Nickname')!=null)
+            document.querySelector('#Nickname').value=user.displayName
+        
+          }
+          if(document.getElementById("btnLogout")!=null){
+
             document.getElementById("btnLogout").removeAttribute("hidden")
+        }
+
+        if(document.querySelector('#tna')!=null){
+
+            document.querySelector("#tna").removeAttribute("hidden")
+        }
+        if(document.querySelector('#tnp')!=null){
+
+            document.querySelector("#tnp").removeAttribute("hidden")
+
+        }
+
+        if(document.getElementById("btna")!=null){
+
             document.getElementById("btna").removeAttribute("hidden")
+        }
+        if(document.getElementById("btnp")!=null){
+
             document.getElementById("btnp").removeAttribute("hidden")
-          
+           
+        }
 
             //Take user to a different or home page
             var x = document.getElementById("btnlogin")
@@ -134,24 +160,40 @@ err => {
              x.setAttributeNode(y);
              
             
-             subscribePost();
-           
+             
+             subscribemyPost();
               
-            
+             subscribePostDetail();
            // is signed in
-            
+           onEdit();
+           imageLoad()
             
             
         }else{
+          if(document.querySelector('#tna')!=null){
+
+          document.querySelector("#tna").setAttribute("hidden",true)
+          }
+          if(document.getElementById("btna")!=null){
+
             document.getElementById("btna").setAttribute("hidden",true)
+          }
+
             document.getElementById("btnlogin").removeAttribute("hidden")
+            if(document.querySelector('#tnp')!=null){
+
+            document.querySelector("#tnp").setAttribute("hidden",true)
+            }
+            if(document.getElementById("btnp")!=null){
+
             document.getElementById("btnp").setAttribute("hidden",true)
+            }
             document.getElementById("btnLogout").setAttribute("hidden",true)
 
             
+            subscribePostDetail();
 
-
-            subscribePost();
+            
             
             
             //no user is signed in
@@ -161,3 +203,7 @@ err => {
         
         
     });
+
+
+
+    

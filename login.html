@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-storage.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    
+</head>
+<body > 
+
+
+
+  
+
+  
+  <nav class="row">
+         
+        
+     <div class="col-9 " id="adt" > 
+
+      <span id="noFloat">
+           
+    <a href="/multipage/public/index.html" class="btn" onclick="subscribePost(); return false;">Home</a>
+    
+
+  </span>
+  </div> 
+    <div class="col-3 " id="abt" >
+    <span id="Float">
+     <a  href="#" class="btn" id="btnLogout" hidden onclick =" signOut(); return false;" >Log out</a>
+       <a href="/multipage/public/login.html"   id="btnlogin">Login</a>
+     </span>
+    </div>
+</nav>
+
+    
+    
+<div class="mt">
+<div class="row">
+  <span>
+  <div class="col-33 " id="act" > 
+  <br />   <br />   
+   
+
+
+ </div></span><div class="col-99">
+  <div class="row"><div class="col-6">
+ 
+    <div id="box">
+    <div class="xyz">
+      <input type="email"  placeholder="Email address"  id="txtEmail">
+      </div><br/><br/>
+      <div class="xyz">
+      <input type="password" placeholder="Password"  id="txtPassword" >
+      </div><br/>
+      <div id="btnReset">
+        <a id="abc" onclick="onReset(); ">Reset Password</a>
+      </div><br /><br/>
+      
+    
+    <button   id="btnLogin" onclick = "signIn()" ;>Log in</button> 
+    
+    
+    <button   id="btnSignUp" onclick="signUp()";>Sign up</button><br/><br/>
+    
+   
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <br /> <br />
+
+</div></div> </div>
+ 
+ 
+ 
+ 
+ <span id="errorMessage"></span>
+  <span id="successMessage"></span>
+  <script>var firebaseConfig = {
+    apiKey: "AIzaSyBDlOnYe4bA-82Qkd30d026GnB9OlMSaag",
+    authDomain: "posts-f62c9.firebaseapp.com",
+    databaseURL: "https://posts-f62c9.firebaseio.com",
+    projectId: "posts-f62c9",
+    storageBucket: "posts-f62c9.appspot.com",
+    messagingSenderId: "158079951560",
+    appId: "1:158079951560:web:8bb10ea9ef7bde24c8fbfd",
+    measurementId: "G-QTVCV1MVJN"
+  }
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ const auth = firebase.auth();
+
+</script>
+
+
+  
+  
+  
+  <script src="postService.js"></script>
+  <script src="auth.js"></script>
+
+
+
+
+     
+    
+      
+     
+       
+        
+     
+       
+      </body>
+      </html>   
